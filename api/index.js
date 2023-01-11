@@ -33,6 +33,6 @@ app.post("/api/upload",upload.single("file"),(req,res)=>{
  app.use("/api/posts", postRoute);
  app.use("/api/categories", categoryRoute);
 
-app.listen("3000",()=>{
+app.listen("4000",()=>{
     console.log("backend is running.");
 });
