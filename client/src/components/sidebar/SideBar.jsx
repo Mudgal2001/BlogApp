@@ -9,7 +9,8 @@ export default function SideBar() {
 
    useEffect(()=>{
    const getCats = async ()=>{
-      const res = await axios.get("/categories");
+      const res = await axios.get("http://localhost:4000/api/categories");
+      console.log(res);
       setCats(res.data);
    };
     getCats();
@@ -18,7 +19,7 @@ export default function SideBar() {
     <div className="sidebar">
      <div className="sidebarItem">
         <span className="sidebarTitle">About Me</span>
-        <img src="https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandblog/demo/wp-content/uploads/2015/11/aboutme.jpg" alt="" />
+        <img src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg" alt="" />
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis possimus vel in quidem impedit id minus sit. Veritatis sunt similique quo iste, no!</p>
      </div>
      <div className="sidebarItem">
